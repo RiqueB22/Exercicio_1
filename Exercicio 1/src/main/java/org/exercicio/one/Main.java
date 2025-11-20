@@ -23,7 +23,7 @@ public class Main {
         }else{
             //Se tem letra, fecha o programa
             System.out.println("Digite um numero, não uma letra ou deixe-as vazias.");
-            System.exit(0);
+            return;
         }
 
         //Checa se o numero é >= à 1
