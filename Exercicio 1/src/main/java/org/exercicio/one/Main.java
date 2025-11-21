@@ -18,7 +18,7 @@ public class Main {
         entrada = input.nextLine();
 
         //Checa se tem numeros
-        if(entrada.chars().noneMatch(Character::isLetter) && !entrada.isBlank()){
+        if(entrada.matches(".*[0-9].*") && !entrada.isBlank()){
             n = Integer.parseInt(entrada);
         }else{
             //Se tem letra, fecha o programa
@@ -31,8 +31,9 @@ public class Main {
             //Faz adição
             for (int i = 1; i <= n; i++){
                 total += i;
-                System.out.println("Total: " + total);
             }
+
+            System.out.println("Total: " + total);
         }else{
             System.out.println("Seu numero é abaixo de 1!");
         }
